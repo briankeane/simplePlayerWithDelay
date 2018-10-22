@@ -14,6 +14,10 @@
 		4BD9D3CB217E2BBC000073B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD9D3C9217E2BBC000073B4 /* LaunchScreen.storyboard */; };
 		4BD9D3D6217E2BBC000073B4 /* simplePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D3D5217E2BBC000073B4 /* simplePlayerTests.swift */; };
 		4BD9D3E5217E35C2000073B4 /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4BD9D3E4217E35C2000073B4 /* hihat.wav */; };
+		4BD9D3E7217E3A38000073B4 /* DownloadableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D3E6217E3A38000073B4 /* DownloadableProtocol.swift */; };
+		4BD9D3E9217E3AF0000073B4 /* DownloadableDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D3E8217E3AF0000073B4 /* DownloadableDelegateProtocol.swift */; };
+		4BD9D3EB217E3B21000073B4 /* DownloadableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D3EA217E3B21000073B4 /* DownloadableState.swift */; };
+		4BD9D3EE217E3B72000073B4 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D3ED217E3B72000073B4 /* Downloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		4BD9D3D5217E2BBC000073B4 /* simplePlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplePlayerTests.swift; sourceTree = "<group>"; };
 		4BD9D3D7217E2BBC000073B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD9D3E4217E35C2000073B4 /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hihat.wav; sourceTree = "<group>"; };
+		4BD9D3E6217E3A38000073B4 /* DownloadableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableProtocol.swift; sourceTree = "<group>"; };
+		4BD9D3E8217E3AF0000073B4 /* DownloadableDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableDelegateProtocol.swift; sourceTree = "<group>"; };
+		4BD9D3EA217E3B21000073B4 /* DownloadableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableState.swift; sourceTree = "<group>"; };
+		4BD9D3ED217E3B72000073B4 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		4BD9D3BF217E2BBA000073B4 /* simplePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				4BD9D3EC217E3B30000073B4 /* Downloadable */,
 				4BD9D3C0217E2BBA000073B4 /* AppDelegate.swift */,
 				4BD9D3C2217E2BBA000073B4 /* ViewController.swift */,
 				4BD9D3C4217E2BBA000073B4 /* Main.storyboard */,
@@ -97,6 +106,17 @@
 				4BD9D3D7217E2BBC000073B4 /* Info.plist */,
 			);
 			path = simplePlayerTests;
+			sourceTree = "<group>";
+		};
+		4BD9D3EC217E3B30000073B4 /* Downloadable */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9D3EA217E3B21000073B4 /* DownloadableState.swift */,
+				4BD9D3E8217E3AF0000073B4 /* DownloadableDelegateProtocol.swift */,
+				4BD9D3E6217E3A38000073B4 /* DownloadableProtocol.swift */,
+				4BD9D3ED217E3B72000073B4 /* Downloader.swift */,
+			);
+			path = Downloadable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +223,10 @@
 			files = (
 				4BD9D3C3217E2BBA000073B4 /* ViewController.swift in Sources */,
 				4BD9D3C1217E2BBA000073B4 /* AppDelegate.swift in Sources */,
+				4BD9D3EE217E3B72000073B4 /* Downloader.swift in Sources */,
+				4BD9D3E9217E3AF0000073B4 /* DownloadableDelegateProtocol.swift in Sources */,
+				4BD9D3E7217E3A38000073B4 /* DownloadableProtocol.swift in Sources */,
+				4BD9D3EB217E3B21000073B4 /* DownloadableState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
